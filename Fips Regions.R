@@ -1,6 +1,10 @@
 ## Script to matchup fips with region
-## Note: noncensus also has divisions which are 
-library(noncensus)
+## Note: noncensus also has divisions if you are looking for those
+if (!require("noncensus") {
+  install.packages("noncensus")
+  library(noncensus)
+  }
+
 library(plyr)
 data(states)
 data(counties)
